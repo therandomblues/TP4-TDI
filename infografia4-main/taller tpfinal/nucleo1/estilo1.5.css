@@ -1,0 +1,409 @@
+html {
+    background-color: #170F1F;
+    
+}
+
+html, body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 1px;
+    position: relative;
+
+    background-image: url(../nucleo1/img/fondo1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+/*
+========================================
+            TIPOGRAFIAS
+========================================
+*/
+
+
+h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: clamp(2rem, 7.4vw, 96px);
+    line-height: 1.03;
+    text-align: left;
+    letter-spacing: -0.04em;
+    
+}
+
+h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.08;
+    text-align: left;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: -0.04em;
+}
+
+h4{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: -0.04em;
+}
+
+p, ol, li{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.35;
+    text-align: left;
+    letter-spacing: -0.02em;
+}
+
+h1, h2, h3, h4, p, ol, li{
+    color: #FFFFFF;
+    margin: 24px;
+}
+
+.tituloImagen{
+    display: flex;
+}
+
+
+/*
+===========================================================
+                VARIAION DE TIPOGRAFIAS
+===========================================================
+*/
+
+.titulo-degradado{
+
+    font-size: 110px;
+
+    background: linear-gradient(to bottom, #FFFFFF, #D7B0E6);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.titulo-degradado2 {
+    font-size: clamp(4rem, 11vw, 170px);
+    background: linear-gradient(to bottom, #FFFFFF, #D7B0E6);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 0 0 24px;
+}
+
+.resaltado1{
+
+    margin-bottom: 0px;
+
+    color: #D7B0E6
+}
+
+/*
+========================================
+                HEADER
+========================================
+*/
+
+header{
+    
+}
+
+
+/*
+========================================
+            TARJETAS
+========================================
+*/
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.contenedorTarjeta{
+    border-radius: 16px;
+    border: 1px solid #ffffff;
+
+    padding: 32px;
+
+    width: 100%;
+    max-width: 528px;
+    box-sizing: border-box;
+
+    background-color: rgba(23, 15, 31, 50%);
+    
+
+    background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+}
+
+.seguidillaTarjetas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tarjetaDegradadoVerde { /*nuevo*/
+    border-radius: 16px;
+    border: 2px solid #79DA5B80;
+    flex-direction: row;
+    padding: 32px;
+
+    width: 100%;
+    max-width: 528px;
+    box-sizing: border-box;
+
+    background: linear-gradient(to bottom, #170F1F00, #3f772e88);
+    
+
+    background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+}
+
+.contenedorTarjeta img {
+    max-width: 100%;
+    
+}
+
+.flechaTarjeta {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+.imgAtril{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.imgMano{
+    max-width: 100%;
+}
+
+.opciones{
+    display: flex;
+    
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.opciones img{
+    width: 80px;
+    height: 80px;
+}
+
+/*
+========================================
+            PANTALLAS
+========================================
+*/
+
+.pantalla1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;   
+    align-items: stretch;              
+    min-height: 100vh;
+    gap: 40px;
+    padding: 0 120px;
+    box-sizing: border-box;
+}
+
+.pantalla1 .tarjeta {
+    padding: 0;
+    justify-content: center;
+}
+
+
+
+.contenedorTarjeta {
+    max-width: 400px;
+    padding: 24px;
+}
+
+.contenedorTarjeta h4 {
+    font-size: 28px;
+    text-align: center;        /* en la referencia el texto está centrado */
+    margin: 16px 0;
+}
+
+.contenedorTarjeta p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.contenedorTarjeta .opciones {
+    margin-bottom: 12px;
+}
+
+.contenedorTarjeta .opciones img {
+    width: 52px;
+    height: 52px;
+}
+
+.imgAtril {
+    width: 90px;               /* el atril es chico en la referencia */
+}
+
+
+/*
+========================================
+            PANTALLA 2 MANO
+========================================
+*/
+
+.pantalla2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    padding: 0 0 0 120px;      
+    box-sizing: border-box;
+}
+
+.columna-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    padding: 80px 0;
+}
+
+.columna-texto footer {
+    display: flex;
+    align-items: center;       
+    gap: 20px;
+    padding: 0;
+}
+
+.pantalla2 main {
+    align-self: end;           
+    justify-self: end;         
+}
+
+.imgMano {
+    display: block;            
+    max-width: 100%;
+    height: auto;
+}
+
+.subtitulo {
+    font-weight: 400;          
+    font-size: 48px;
+}
+
+
+
+
+
+
+
+footer{
+    padding: 20px;
+}
+
+/*
+========================================
+            BOTONES
+========================================
+*/
+
+
+.boton1 {
+    display: inline-flex;       
+    align-items: center;
+    gap: 0px;                  
+
+    padding: 16px 40px;         
+    margin-top: 20px;
+
+    background-color: #ffffff;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 4px;               
+    border-radius: 200px;       
+    cursor: pointer;
+
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    color: #170F1F;    
+
+    text-decoration: none;
+    
+}
+
+.boton1 img {
+    width: 80px;                
+    height: 80px;
+}
+
+
+.boton2 {
+    display: inline-flex;       
+    align-items: center;
+    gap: 0px;                  
+
+    padding: 16px 40px;         
+    margin-top: 20px;
+
+    background-color: rgba(255, 255, 255, 20%);
+    border: #ffffff;
+    border-style: solid;
+    border-width: 4px;               
+    border-radius: 200px;       
+    cursor: pointer;
+
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    color: #ffffff;    
+
+    text-decoration: none;
+    
+}
+
+.boton2 img {
+    width: 80px;                
+    height: 80px;
+}
