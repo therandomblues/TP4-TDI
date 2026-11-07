@@ -1,0 +1,608 @@
+html {
+    background-color: #170F1F;
+    
+}
+
+html, body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 1px;
+    position: relative;
+
+    background-image: url(../nucleo3/img/degradVerde.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+.bodynucleo2 {
+    background-image: url(../nucleo3/img/Verde\ dual\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/*
+========================================
+            TIPOGRAFIAS
+========================================
+*/
+
+
+h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: clamp(2rem, 7.4vw, 96px);
+    line-height: 1.03;
+    text-align: left;
+    letter-spacing: -0.04em;
+    margin: 100px;
+    
+    
+}
+
+h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.08;
+    text-align: left;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: -0.04em;
+}
+
+h4{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: -0.04em;
+}
+
+p, ol, li{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.35;
+    text-align: left;
+    letter-spacing: -0.02em;
+}
+
+h1, h2, h3, h4, h5, p, ol, li{
+    color: #FFFFFF;
+    margin: 24px;
+}
+
+h5{
+    display: inline-flex;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 0.5;
+    text-align: left;
+    letter-spacing: -0.04em;
+    
+}
+
+.textoIzq{
+    flex: 1;
+}
+
+.textoIzq h4{
+margin-top: 0; 
+font-size: 64px;
+}
+
+.textoIzq p{
+  margin-top: 0; 
+  font-size: 48px;
+}
+
+.textoIzDer{
+    display: flex;
+  justify-content: space-between; /* Envía el primer elemento a la izquierda y el último a la derecha */
+
+}
+
+
+/*
+===========================================================
+                VARIAION DE TIPOGRAFIAS
+===========================================================
+*/
+
+.titulo-degradado{
+
+    font-size: 110px;
+
+    background: linear-gradient(to bottom, #FFFFFF, #d6ffca);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 10px;
+    margin-left: 115px;
+}
+
+.titulo-degradado2 {
+    font-size: clamp(4rem, 11vw, 170px);
+    background: linear-gradient(to bottom, #FFFFFF, #79DA5B);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 0 0 24px;
+}
+
+.titulo-degradado3 {
+
+    font-size: 100px;
+
+    background: linear-gradient(to bottom, #FFFFFF, #92ff70);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 10px;
+}
+
+
+.resaltado1{
+
+    margin-bottom: 0px;
+
+    color: #79DA5B
+}
+
+/*
+========================================
+                HEADER
+========================================
+*/
+
+header{
+    
+}
+
+
+/*
+========================================
+            TARJETAS
+========================================
+*/
+
+.game-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 400px;
+
+    border-radius: 8px;
+    border: 2px solid #79DA5B80;
+    flex-direction: row;
+    margin-left: 100px;
+    padding: 16px;
+
+
+
+    justify-content: center;
+
+    width: 90%;
+    max-width: 90%;
+    height: 20%;
+    max-height: 100%;
+    box-sizing: border-box;
+    
+    background: linear-gradient(to bottom, #170F1F00, #3f772e88);
+    
+
+    background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+
+}
+
+.items-container, .slots-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    min-height: 80px;
+    padding: 15px;
+}
+
+.items-container {
+    border-radius: 8px;
+}
+
+/* Estilos de los objetos que se arrastran */
+.draggable {
+    width: 396px;
+    height: 238px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.drag-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Evita que la imagen se deforme */
+    pointer-events: none; /* Muy importante: evita que el navegador intente arrastrar la imagen en vez de la caja contenedora */
+    border-radius: 8px; /* Opcional, por si tienen fondo */
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.hide {
+    opacity: 0.2;
+}
+
+/* ESTILOS DE LAS CASILLAS DE DESTINO */
+.slot {
+    width: 396px;
+    height: 238px;
+    border: 3px dashed #6c757d; /* Borde punteado oscuro */
+    background-color: #302f2f; /* Fondo claro para que se vean vacías */
+    border-radius: 8px;
+    filter: opacity(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.slot.hovered {
+    background-color: #e3f2fd;
+    border-color: #007bff;
+    border-style: solid;
+}
+
+#message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 24px;
+    margin-top: 15px;
+}
+
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: right;
+}
+
+.contenedorTarjeta{
+    border-radius: 16px;
+    border: 1px solid #ffffff;
+
+    padding: 32px;
+
+    width: 100%;
+    max-width: 528px;
+    box-sizing: border-box;
+
+    background-color: rgba(23, 15, 31, 50%);
+    
+
+    
+
+    background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+}
+
+.seguidillaTarjetas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tarjetaDegradadoVerde { /*nuevo*/
+    border-radius: 8px;
+    border: 2px solid #79DA5B80;
+    flex-direction: row;
+    margin-left: 100px;
+    padding: 16px;
+
+
+
+    display: flex;
+    justify-content: center;
+
+    width: 90%;
+    max-width: 90%;
+    height: 20%;
+    max-height: 100%;
+    box-sizing: border-box;
+    
+    background: linear-gradient(to bottom, #170F1F00, #3f772e88);
+    
+
+    background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+}
+
+.contenedorTarjeta img {
+    max-width: 100%;
+    
+}
+
+.contenTituloImagen {
+  display: flex;
+  justify-content: space-between; /* Envía el primer elemento a la izquierda y el último a la derecha */
+  align-items: flex-start; /* Alinea los elementos arriba */
+  margin-left: 100px;
+}
+
+.imgTomasG{
+    width: 35%;
+    height: 35%; 
+    border-radius: 4px;
+}
+
+.ejTomasG{
+    width: 30%;
+    height: 30%;
+    margin-right: 80px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px rgba(72, 253, 0, 0.5);
+    border: 5px solid #79DA5B;
+
+}
+
+.flechaTarjeta {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+.imgAtril{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.imgMano{
+    max-width: 100%;
+}
+
+.opciones{
+    display: flex;
+    
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.opciones img{
+    width: 80px;
+    height: 80px;
+}
+
+.tamanoIcono{
+    width: 20%;
+    height: 20%;
+}
+
+/*
+========================================
+            PANTALLAS
+========================================
+*/
+
+.pantalla1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;   
+    align-items: stretch;              
+    min-height: 100vh;
+    gap: 40px;
+    padding: 0 120px;
+    box-sizing: border-box;
+}
+
+.pantalla1 .tarjeta {
+    padding: 0;
+    justify-content: center;
+}
+
+
+
+.contenedorTarjeta {
+    max-width: 400px;
+    padding: 24px;
+}
+
+.contenedorTarjeta h4 {
+    font-size: 28px;
+    text-align: center;        /* en la referencia el texto está centrado */
+    margin: 16px 0;
+}
+
+.contenedorTarjeta p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.contenedorTarjeta .opciones {
+    margin-bottom: 12px;
+}
+
+.contenedorTarjeta .opciones img {
+    width: 52px;
+    height: 52px;
+}
+
+.imgAtril {
+    width: 90px;               /* el atril es chico en la referencia */
+}
+
+
+/*
+========================================
+            PANTALLA 2 MANO
+========================================
+*/
+
+.pantalla2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    padding: 0 0 0 120px;      
+    box-sizing: border-box;
+}
+
+.columna-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    padding: 80px 0;
+}
+
+.columna-texto footer {
+    display: flex;
+    align-items: center;       
+    gap: 20px;
+    padding: 0;
+}
+
+.pantalla2 main {
+    align-self: end;           
+    justify-self: end;         
+}
+
+.imgMano {
+    display: block;            
+    max-width: 100%;
+    height: auto;
+}
+
+.subtitulo {
+    font-weight: 400;          
+    font-size: 48px;
+}
+
+
+
+
+
+
+
+footer{
+    padding: 20px;
+}
+
+/*
+========================================
+            BOTONES
+========================================
+*/
+
+
+.boton1 {
+    display: inline-flex;       
+    align-items: center;
+    gap: 0px;                  
+
+    padding: 16px 40px;         
+    margin-left: 75%;
+    background-color: #ffffff;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 4px;               
+    border-radius: 200px;       
+    cursor: pointer;
+
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    color: #170F1F;    
+
+    text-decoration: none;
+    
+}
+
+.boton1 img {
+    width: 80px;                
+    height: 80px;
+}
+
+
+.boton2 {
+    display: inline-flex;       
+    align-items: center;
+    gap: 0px;                  
+
+    padding: 16px 40px;         
+    margin-top: 20px;
+
+    background-color: rgba(255, 255, 255, 20%);
+    border: #ffffff;
+    border-style: solid;
+    border-width: 4px;               
+    border-radius: 200px;       
+    cursor: pointer;
+
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    color: #ffffff;    
+
+    text-decoration: none;
+    
+}
+
+.boton2 img {
+    width: 80px;                
+    height: 80px;
+}
