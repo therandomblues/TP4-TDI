@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Generación de imágenes con IA • Arte digital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./estilos-nucleo2.css" />
+  </head>
+  <body class="fondito">
+    <div class="pantalla4">
+      <header class="HeaderPaso1Prompt">
+        <h2>
+          Convertí las imágenes al estilo Ghibli antes de que se acabe el tiempo
+        </h2>
+      </header>
+
+      <main>
+        <div class="contenedorTarjeta2 convertir_imgs">
+        <ul class="lista-imagenes">
+        <li class="tarjeta2">
+    <img src="img/uno_convertir.png" data-reemplazo="img/slop/siete_convertir.png" alt="" />
+        </li>
+
+         <li class="tarjeta2">
+       <img src="img/dos_convertir.png" data-reemplazo="img/slop/ocho_convertir.png" alt="" />
+      </li>
+
+  <li class="tarjeta2">
+      <img src="img/tres_convertir.png" data-reemplazo="img/slop/nueve_convertir.png" alt="" />
+  </li>
+
+  <li class="tarjeta2">
+    <img src="img/cuatro_convertir.png" data-reemplazo="img/slop/diez_convertir.png" alt="" />
+  </li>
+
+  <li class="tarjeta2">
+    <img src="img/cinco_convertir.png" data-reemplazo="img/slop/once_convertir.png" alt="" />
+  </li>
+
+  <li class="tarjeta2">
+    <img src="img/seis_convertir.png" data-reemplazo="img/slop/doce_convertir.png" alt="" />
+  </li>
+
+<li class="tarjeta2 tarjeta2_cuqui" id="panel-estado">
+  <div class="bloque-dato">
+    <span class="etiqueta-dato">Imágenes convertidas</span>
+    <div class="valor-grande" id="contador-convertidas">0<span class="total-chico">/6</span></div>
+    <p class="mensaje-logrado" id="mensaje-logrado">¡Lo has logrado!</p>
+  </div>
+
+  <div class="bloque-dato">
+    <span class="etiqueta-dato">Tiempo restante</span>
+    <div class="valor-grande" id="cronometro">0:30</div>
+    <div class="barra-tiempo-contenedor">
+      <div class="barra-tiempo-relleno" id="barra-tiempo"></div>
+    </div>
+  </div>
+</li>  </li>
+</ul>        </div>
+      </main>
+
+      <footer>
+        <h4>
+          <img src="img/pincel.png" alt="" />Mantené apretado y pasá el pincel
+          sobre las imágenes
+        </h4>
+        <a href="nucleo2.4.html" class="boton1 deshabilitado" id="btnConfirmar">
+          Siguiente
+          <img src="img/Flecha derecha.png" alt="" />
+        </a>
+      </footer>
+    </div>
+    <script src="dibujo.js"></script>
+  </body>
+</html>
